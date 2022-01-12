@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/tech-adept-enchantments/static/css/main.7cb5d5c6.css",
-    "main.js": "/tech-adept-enchantments/static/js/main.0e633d66.js",
+    "main.css": "/tech-adept-enchantments/static/css/main.794cd125.css",
+    "main.js": "/tech-adept-enchantments/static/js/main.4e641507.js",
     "index.html": "/tech-adept-enchantments/index.html",
-    "main.7cb5d5c6.css.map": "/tech-adept-enchantments/static/css/main.7cb5d5c6.css.map",
-    "main.0e633d66.js.map": "/tech-adept-enchantments/static/js/main.0e633d66.js.map"
+    "main.794cd125.css.map": "/tech-adept-enchantments/static/css/main.794cd125.css.map",
+    "main.4e641507.js.map": "/tech-adept-enchantments/static/js/main.4e641507.js.map"
   },
   "entrypoints": [
-    "static/css/main.7cb5d5c6.css",
-    "static/js/main.0e633d66.js"
+    "static/css/main.794cd125.css",
+    "static/js/main.4e641507.js"
   ]
 }
