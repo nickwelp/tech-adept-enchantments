@@ -4,9 +4,11 @@
 
 // Data structure looks like
 // {
+// 'relic': {
 //   'weapon': {
 //      'Plasma Caliver': ['enchantments by description']
 //    }
+//  }
 // }
 const ItemMap = {};
 
@@ -16,13 +18,15 @@ const Enchant = (tagname, desc, items, slots, quality, doubled, groupd, seasons)
   slots.forEach((slot) => {
     items.forEach((item) => {
       if(ItemMap[slot]){
-        if(ItemMap[slot][item] ) { 
-          //  sometimes Euipment Module is listed twice, reason unknown, hence checking if already included
-          if(!ItemMap[slot][item].includes(desc) ) {
-            ItemMap[slot][item].push(desc)
-          }
-        } else ItemMap[slot][item] = [desc];
-      } else ItemMap[slot] = {[item]:[desc]};
+        if(ItemMap[slot][quality]){
+          if(ItemMap[slot][quality][item]) { 
+            //  sometimes Euipment Module is listed twice, reason unknown, hence checking if already included
+            if(!ItemMap[slot][quality][item].includes(desc) ) {
+              ItemMap[slot][quality][item].push(desc)
+            }
+          } else ItemMap[slot][quality][item] = [desc]; 
+        } else ItemMap[slot][quality] = {[item]:[desc]};
+      } else ItemMap[slot] = {[quality]:{[item]:[desc]}};
     });  
   });
 }
